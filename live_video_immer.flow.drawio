@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-25T11:00:51.879Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="x8pB4QfZYWS0zjZBr2is" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-28T12:56:52.722Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Gx6e1riqn0ycNuJilR4z" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="1622" dy="1682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1621" dy="2324" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,7 +25,7 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FC8D6A;endArrow=classic;endFill=1;" parent="1" source="CTMLsmFPayaTSugQ_vrA-2" target="CTMLsmFPayaTSugQ_vrA-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1q_19juKDQYcNWKgW3-u-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;strokeColor=#17AAD5;" edge="1" parent="1" source="CTMLsmFPayaTSugQ_vrA-2">
+        <mxCell id="1q_19juKDQYcNWKgW3-u-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;strokeColor=#17AAD5;" parent="1" source="CTMLsmFPayaTSugQ_vrA-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-440" y="-830" as="targetPoint" />
             <Array as="points">
@@ -35,7 +35,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1q_19juKDQYcNWKgW3-u-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#17AAD5;" edge="1" parent="1" source="CTMLsmFPayaTSugQ_vrA-2" target="CTMLsmFPayaTSugQ_vrA-22">
+        <mxCell id="1q_19juKDQYcNWKgW3-u-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#17AAD5;" parent="1" source="CTMLsmFPayaTSugQ_vrA-2" target="CTMLsmFPayaTSugQ_vrA-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-2" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;SBImmerStartPb&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;（StartHandler）&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
@@ -211,8 +211,8 @@
             <mxGeometry x="-156" y="-311" width="495" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-64" value="从redis获取一些直播间统计特征和召回相似主播：&#xa;sb_read_sonar_.redis_by_rid:塞入待查询的直播间nid&#xa;sb_deal_sonar_redis by_rid:保存直播间的展现/点击/订单/分享等数据（供后续流控和&#xa;优质直播间调权使用)&#xa;sb_immer._read_sonar_redis_.by_query_nid:拼接沉浸式入口nid为key请求redis&#xa;sb_immer._deal_sonar._redis._by_query._nid:获取沉浸式入口直播资源支付icf拉链" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-171" y="-237.14999999999998" width="480" height="110" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-64" value="从redis获取一些直播间统计特征和召回相似主播：&#xa;- sb_read_sonar_redis_by_rid：将队列中直播资源的rid存入key中&#xa;- sb_deal_sonar_redis by_rid：保存直播间的展现/点击/订单/分享等数据&#xa;- sb_immer_read_sonar_redis_by_query_nid：拼接沉浸式入口nid为key请求redis&#xa;- sb_immer_deal_sonar_redis.by_query_nid：获取沉浸式入口直播资源支付icf拉链" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-171" y="-237.15" width="731" height="110" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-65" value="召回结果过滤算子" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-171" y="-116.43" width="130" height="40" as="geometry" />
@@ -220,18 +220,18 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-66" value="功能多样性队列拆分&#xa;1.live_video_immer队列：针对所有bs的召回结果，分为bs_resultz和bs_skip_result,对bs_result做diversity函数处&#xa;理后，连同bs_skip_result-一起插入返回结果。&#xa;处理：&#xa;1.插入需要干预的直播间&#xa;2.优先插入正在播的直播间，再插入回放直播间（当正在播的直播间小于10个时才会填充回放直播间）。&#xa;3.沉浸式候选直播间相关性约束。根据深知用户模型记录的用户图文/视频的类目/子类目tag点击率分（同ums计&#xa;算)，根据候选直播间的类目属性计算直播间和用户的相关性分，sim=0.2*cate_ctr+0.3*sub_cate_ctr+0.5*&#xa;tag_ctr,并插入sim&gt;0.1的候选集。&#xa;2.live_follow_queuel队列：关注队列&#xa;处理：从所有bs的召回结果中捞出关注主播的直播间。&#xa;3.live_immer_.ds_queue队列：电商结果队列&#xa;处理：从所有bs的召回结果中捞出电商直播间&#xa;4.live_immer_.ds_rank_queue队列：电商结果队列&#xa;处理：从所有bs的召回结果中捞出电商直播间" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-167.07000000000005" y="-65.43" width="560" height="257.43" as="geometry" />
         </mxCell>
-        <UserObject label="队列结果预调整&#xa;live_video._immer队列进行下述算子：&#xa;sb_immer_.adjust_by_.tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;sb_immer_.adjust_by_Iive_type:沉浸式置顶直播，排序方式为直播&gt;回放&gt;预告" link="队列结果预调整&#xa;live_video._immer队列进行下述算子：&#xa;sb_immer_.adjust_by_.tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;sb_immer_.adjust_by_Iive_type:沉浸式置顶直播，排序方式为直播&gt;回放&gt;预告" id="CTMLsmFPayaTSugQ_vrA-67">
+        <UserObject label="队列结果粗排（no model）&#xa;live_video._immer队列进行下述算子：&#xa;- sb_immer_adjust_by_tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;- sb_immer_.adjust_by_Iive_type：沉浸式置顶直播，排序方式为 直播&gt;回放&gt;预告" link="队列结果预调整&#xa;live_video._immer队列进行下述算子：&#xa;sb_immer_.adjust_by_.tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;sb_immer_.adjust_by_Iive_type:沉浸式置顶直播，排序方式为直播&gt;回放&gt;预告" id="CTMLsmFPayaTSugQ_vrA-67">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-163" y="201.62" width="560" height="90" as="geometry" />
+            <mxGeometry x="-163" y="201.62" width="663" height="90" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-68" value="打包用户/物料特征进行精排多目标打分&#xa;打分队列：live_immer_ds_rank_queue" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-770" y="352.21000000000004" width="240" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-69" value="打包用户/物料特征进行精排多目标打分&#xa;打分队列：&#xa;1.live video_immer&#xa;2.live_follow_queue" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-69" value="打包用户/物料特征进行精排多目标打分&#xa;打分队列：&#xa;1.live video_immer&#xa;2.live_follow_queue" style="text;whiteSpace=wrap;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="-175" y="339" width="240" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-70" value="去重打标：包含标题/封面/视频/session重复&#xa;在后面干预模块根据标记去重" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-70" value="去重打标：包含标题/封面/视频/session重复&#xa;PS：在后面干预模块根据标记去重" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="186" y="354" width="260" height="50" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-71" value="分功能队列多目标融合及资源调权" style="text;whiteSpace=wrap;" parent="1" vertex="1">
@@ -245,10 +245,10 @@
             <mxGeometry x="-160" y="679" width="880" height="130" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-74" value="结束节点&#xa;● shoubai immer附加处理逻辑：&#xa;● 电商主播分级落盘&#xa;● 沉浸式多目标预估分透传至grc&#xa;● 主播等级落盘&#xa;● D级主播流量盖帽落盘" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-161" y="822.63" width="200" height="96.37" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-74" value="结果组装&#xa;● shoubai immer附加处理逻辑：&#xa;● 电商主播分级落盘&#xa;● 沉浸式多目标预估分透传至grc&#xa;● 主播等级落盘&#xa;● D级主播流量盖帽落盘" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-165.98" y="830" width="200" height="96.37" as="geometry" />
         </mxCell>
-        <mxCell id="1q_19juKDQYcNWKgW3-u-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#17AAD5;dashed=1;" edge="1" parent="1" source="1q_19juKDQYcNWKgW3-u-1" target="CTMLsmFPayaTSugQ_vrA-7">
+        <mxCell id="1q_19juKDQYcNWKgW3-u-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#17AAD5;dashed=1;" parent="1" source="1q_19juKDQYcNWKgW3-u-1" target="CTMLsmFPayaTSugQ_vrA-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-439" y="-750" />
@@ -256,10 +256,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1q_19juKDQYcNWKgW3-u-1" value="QueryUserTypeExp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" vertex="1" parent="1">
+        <mxCell id="1q_19juKDQYcNWKgW3-u-1" value="QueryUserTypeExp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
           <mxGeometry x="-509.99950338600456" y="-830.6471626656853" width="142.0316027088036" height="50.722683099933626" as="geometry" />
         </mxCell>
-        <mxCell id="1q_19juKDQYcNWKgW3-u-5" value="&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;padding-left:0px&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;获取用户分层及电商用户一、二级分类&lt;/div&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..pCHAVqKNl6A6FzGB.4LZeJNNsyfY-32JqOU4ROncP46VGgSdZKTIl4vjHuSVVTp13aCAMcsRqBmcMl11NA9PIhYyMEap1sNyuyVQPSBf3OS6b5mUCJUOoVcmleNhX4NoEdu-47aaP1DD8qN72Av_ruHi6Yksv0HpaVPMhnA-DxDfH-j-qqGou7mZcKCkmcx_sVsXQGSck9p826Wd89kI1APDDWsyadTtQYAsBp4rLoQ.nJl7Tq-rMvyrGDB84ryziw&amp;quot;}&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="1q_19juKDQYcNWKgW3-u-5" value="&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;padding-left:0px&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;获取用户分层及电商用户一、二级分类&lt;/div&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..pCHAVqKNl6A6FzGB.4LZeJNNsyfY-32JqOU4ROncP46VGgSdZKTIl4vjHuSVVTp13aCAMcsRqBmcMl11NA9PIhYyMEap1sNyuyVQPSBf3OS6b5mUCJUOoVcmleNhX4NoEdu-47aaP1DD8qN72Av_ruHi6Yksv0HpaVPMhnA-DxDfH-j-qqGou7mZcKCkmcx_sVsXQGSck9p826Wd89kI1APDDWsyadTtQYAsBp4rLoQ.nJl7Tq-rMvyrGDB84ryziw&amp;quot;}&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-340" y="-796.83" width="230" height="30" as="geometry" />
         </mxCell>
       </root>
