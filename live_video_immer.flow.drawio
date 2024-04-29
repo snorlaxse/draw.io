@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-28T12:56:52.722Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Gx6e1riqn0ycNuJilR4z" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-29T03:59:20.386Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="qhC6aIpxB94SUFd_9gyD" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="1621" dy="2324" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1462" dy="2093" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-55" value="从UMS服务中读取用户行为信息及用户画像。&#xa;- profile_ml 用户基本属性；- feed_beha_model 互动数据；&#xa;- vertical_zhibo_readlist 各场景点击列表；- live_meditation_um 用户深知模型；&#xa;- video_dislike 视频dislike列表；- live_user_model 直播用户模型；&#xa;- immerse_live_readlist、feed_live_readlist、mv_live_readlist 直播浏览列表&#xa;... ..." style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="65" y="-796.83" width="462" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-57" value="处理上游数据，写入环境变量给后续节点使用" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-57" value="计算用户兴趣" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-161" y="-671" width="470" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-58" value="读取用户trace正排记录，&#xa;根据用户模型将不同直播类型（直播，预告）放入上下文，并去重" style="text;whiteSpace=wrap;" parent="1" vertex="1">
@@ -88,7 +88,7 @@
           <mxGeometry x="-306.91422121896164" y="-513.6493352872756" width="131.10609480812641" height="50.722683099933626" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-10" value="SBImmerRecallGcms&lt;div&gt;(GcmsHandler)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-415.62302483069976" y="-398.75475616247513" width="132.19864559819413" height="50.722683099933626" as="geometry" />
+          <mxGeometry x="-413.00302483069976" y="-398.75475616247513" width="132.19864559819413" height="50.722683099933626" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FC8D6A;" parent="1" source="CTMLsmFPayaTSugQ_vrA-11" target="CTMLsmFPayaTSugQ_vrA-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -169,7 +169,7 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeColor=#17AAD5;" parent="1" source="CTMLsmFPayaTSugQ_vrA-22" target="CTMLsmFPayaTSugQ_vrA-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-22" value="SBImmerDsUserSNDB" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-22" value="QueryUserTypeExp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
           <mxGeometry x="-311.8295033860045" y="-847.5571626656853" width="142.0316027088036" height="50.722683099933626" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#17AAD5;" parent="1" source="CTMLsmFPayaTSugQ_vrA-23" target="CTMLsmFPayaTSugQ_vrA-11" edge="1">
@@ -200,7 +200,7 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-25" value="SBImmerRecallDup&lt;div&gt;(RecallDup)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
           <mxGeometry x="34.91839729119647" y="351.49048767504974" width="142.0316027088036" height="50.722683099933626" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-60" value="gcms_plugin_name:gcms_Iive_msg读取直播间正排信息" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-60" value="gcms_plugin_name:gcms_Iive_msg&#xa;读取直播间正排信息" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-41" y="-388.03" width="330" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-61" value="gcms_plugin_name:video_gcms,&#xa;读取手百视频正排信息 (RecVideoInfo、NewsInfoData)，&#xa;过滤掉拿不到正排的无效资源。&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
@@ -256,11 +256,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1q_19juKDQYcNWKgW3-u-1" value="QueryUserTypeExp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
-          <mxGeometry x="-509.99950338600456" y="-830.6471626656853" width="142.0316027088036" height="50.722683099933626" as="geometry" />
+        <mxCell id="1q_19juKDQYcNWKgW3-u-1" value="SBImmerDsUserSNDB" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
+          <mxGeometry x="-495.99950338600456" y="-830.6471626656853" width="142.0316027088036" height="50.722683099933626" as="geometry" />
         </mxCell>
-        <mxCell id="1q_19juKDQYcNWKgW3-u-5" value="&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;padding-left:0px&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;获取用户分层及电商用户一、二级分类&lt;/div&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..pCHAVqKNl6A6FzGB.4LZeJNNsyfY-32JqOU4ROncP46VGgSdZKTIl4vjHuSVVTp13aCAMcsRqBmcMl11NA9PIhYyMEap1sNyuyVQPSBf3OS6b5mUCJUOoVcmleNhX4NoEdu-47aaP1DD8qN72Av_ruHi6Yksv0HpaVPMhnA-DxDfH-j-qqGou7mZcKCkmcx_sVsXQGSck9p826Wd89kI1APDDWsyadTtQYAsBp4rLoQ.nJl7Tq-rMvyrGDB84ryziw&amp;quot;}&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-340" y="-796.83" width="230" height="30" as="geometry" />
+        <mxCell id="1q_19juKDQYcNWKgW3-u-5" value="&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;获取&lt;span style=&quot;color: rgb(28, 29, 31); background-color: initial;&quot;&gt;电商&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;用户分层&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(28, 29, 31);&quot;&gt;ds_user_layer_tag : 1:低活跃 2:未转化 3:核心&lt;/span&gt;&lt;/div&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span style=&quot;color: rgb(28, 29, 31); background-color: transparent;&quot;&gt;- 浅层用户：30天点击&amp;lt;=5 &amp;amp; 90天购买 &amp;lt;= 1&lt;/span&gt;&lt;/div&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span style=&quot;color: rgb(28, 29, 31); background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;font color=&quot;#1c1d1f&quot;&gt;中层用户：30天点击&amp;gt;5 &amp;amp; 90天购买 = 0&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;font color=&quot;#1c1d1f&quot;&gt;-&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;font color=&quot;#1c1d1f&quot;&gt;核心用户：(30天点击&amp;gt;5 &amp;amp; 90天购买 = 1) 或 90天购买 &amp;gt;= 2&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..yqYl5LdsXMqG1i7H.h2zJN3ad7F0z8zZrL0x5SOSICrESLMV8dEU74EoNBORcdlZFNPWUUC4eia0j4AlamyoKcnQPkH-a4lMZglok0qHV8snmgu5q_vtArxVLRdtko599JwHxf3FpeFeTS3M7G6M1K6R9dh_B0HznSrV_KdrdgtxzzaYRmO5DbicUDLtVJrqaJiWrUDvuusRhMEex5vd5Xe8CMfA0J2DoPf_h3tOpSw.nvGQq45J5KLfsjFWWvhn9A&amp;quot;}&quot;&gt;&lt;/span&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;padding-left:0px&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..yqYl5LdsXMqG1i7H.h2zJN3ad7F0z8zZrL0x5SOSICrESLMV8dEU74EoNBORcdlZFNPWUUC4eia0j4AlamyoKcnQPkH-a4lMZglok0qHV8snmgu5q_vtArxVLRdtko599JwHxf3FpeFeTS3M7G6M1K6R9dh_B0HznSrV_KdrdgtxzzaYRmO5DbicUDLtVJrqaJiWrUDvuusRhMEex5vd5Xe8CMfA0J2DoPf_h3tOpSw.nvGQq45J5KLfsjFWWvhn9A&amp;quot;}&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..pCHAVqKNl6A6FzGB.4LZeJNNsyfY-32JqOU4ROncP46VGgSdZKTIl4vjHuSVVTp13aCAMcsRqBmcMl11NA9PIhYyMEap1sNyuyVQPSBf3OS6b5mUCJUOoVcmleNhX4NoEdu-47aaP1DD8qN72Av_ruHi6Yksv0HpaVPMhnA-DxDfH-j-qqGou7mZcKCkmcx_sVsXQGSck9p826Wd89kI1APDDWsyadTtQYAsBp4rLoQ.nJl7Tq-rMvyrGDB84ryziw&amp;quot;}&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-827" y="-855.6500000000001" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-1" value="沉浸式场景 - query用户类型 Abtest " style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-328.66" y="-790.65" width="208.66" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
