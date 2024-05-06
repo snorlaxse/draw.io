@@ -1,32 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2024-05-06T03:31:43.984Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="lkFD7ERI0G5k_6TNBhcW" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-06T09:53:52.806Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="IFGUY63YzGfAfOiUT4jE" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="2257" dy="1966" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1767" dy="2219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-826" y="-540" as="sourcePoint" />
             <mxPoint x="806.357" y="-542.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-52" value="1.解析gr请求参数，写入环境变量供上下游节点使用，如操作系统、手机版本、showlist、history_info等等。&#xa;2.提前分配多queue_name队列的存储空间（不同功能队列，如关注、电商等）&#xa;3.加载词典数据供后续使用" style="text;whiteSpace=wrap;verticalAlign=middle;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-52" value="1. 解析gr请求参数，写入环境变量供上下游节点使用，如操作系统、手机版本、showlist、history_info等&#xa;2. 分配queue_name多队列的数据资源（不同功能队列，如live_video_immer、live_immer_ds_queue等）使用&#xa;3. 加载词典数据供后续（immer_ecom_default_recall_dict、immer_ecom_stat_cf_recall_dict 等）" style="text;whiteSpace=wrap;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-165" y="-959" width="675" height="64" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-54" value="用户类型，是否YY用户" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="60" y="-850.28" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-55" value="从UMS服务中读取用户行为信息及用户画像。&#xa;- profile_ml 用户基本属性；- feed_beha_model 互动数据；&#xa;- vertical_zhibo_readlist 各场景点击列表；- live_meditation_um 用户深知模型；&#xa;- video_dislike 视频dislike列表；- live_user_model 直播用户模型；&#xa;- immerse_live_readlist、feed_live_readlist、mv_live_readlist 直播浏览列表&#xa;... ..." style="text;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-55" value="从UMS服务中读取用户行为信息及用户画像。&#xa;无个性化实现（代码全注释），调用基类feed_q::marvel::UserModelHandler加载模型&#xa;[.@feature] 如下：&#xa;- profile_ml 用户基本属性；- feed_beha_model 互动数据；&#xa;- vertical_zhibo_readlist 各场景点击列表；- live_meditation_um 用户深知模型；&#xa;- video_dislike 视频dislike列表；- live_user_model 直播用户模型；&#xa;- immerse_live_readlist、feed_live_readlist、mv_live_readlist 直播浏览列表&#xa;... ..." style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="65" y="-796.83" width="462" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-57" value="计算用户兴趣" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-161" y="-671" width="470" height="40" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-57" value="用户兴趣计算模块；&#xa;加载计算算子：OperatorManager&lt;AttentionFunc&gt;::global()-&gt;get_operator(name);&#xa;[.@operator] ： cal_after_user_model 处理用户模型的数据存入上下文；merge_follow_map 合并用户的关注列表； &#xa;cal_session_history 整合session_list并去重 ... ...&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-163" y="-681.21" width="671" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-58" value="读取用户trace正排记录，&#xa;根据用户模型将不同直播类型（直播-title_sign，预告-star_id）放入上下文，并去重" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-161" y="-599" width="450" height="40" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-58" value="读取用户trace正排记录；&#xa;根据用户模型将不同直播类型的信息（直播-title_sign，预告-star_id）放入上下文，并去重&#xa;PS：入口直播间信息 - cntx-&gt;_query_nid" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-161" y="-605" width="531" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-59" value="召回倒排索引&#xa;Ø （skip_condition）从用户模型获取活跃度，活跃度为4,5,6的用户过滤掉直播资源&#xa;Ø 根据节点tag配置和请求app来源，确定bs召回需要请求的拉链&#xa;Ø 沉浸式的的召回是混合分发 &quot;shoubai_bjh&quot;,&quot;yy_immer_.attentions_s3&quot;,&quot;yy_immer__attentions_non_s3&quot;,&quot;bjh_immer__attentions&quot;,&quot;stars&quot;,&quot;bs_follows&#39;&quot;,&quot;hf_attentions&quot;,&#xa;&quot;zcm_attentions&#39;&quot;,&quot;bs_one_quantitys&quot;,∥手百混合分发&#xa;Ø name和attention组成唯一的拉链key(其中的attention为拉链形成的逻辑运算)&#xa;Ø write_back_result:将多路urs的返回结果去重后写入cntx-&gt;get bs_resultz和single_response_ptr(ive_video_immer队列)&#xa;Ø 最后把干预召回结果塞入" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-160" y="-541" width="979" height="150" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-59" value="召回倒排索引&#xa;Ø 过滤掉直播资源 FOR 7天未点击/未展现/ user_activity 活跃度标记为4,5,6的用户&#xa;Ø 根据节点tag配置(shoubai_immer)和请求app来源（shoubai/tieba/haokan/quanmin），确定bs召回需要请求的拉链&#xa;    ● 沉浸式召回混合分发 &quot;shoubai_bjh&quot;,&quot;yy_immer_attentions_s3&quot;,&quot;yy_immer_attentions_non_s3&quot;,&quot;bjh_immer_attentions&quot;,&quot;stars&quot;,&quot;bs_follows&#39;&quot;,&quot;hf_attentions&quot;, &quot;zcm_attentions&#39;&quot;,&quot;bs_one_quantitys&quot;&#xa;Ø name和attention组成唯一的拉链key(其中的attention为拉链形成的逻辑运算)&#xa;Ø write_back_result:将多路urs的返回结果去重后写入cntx-&gt;get bs_result和single_response_ptr(live_video_immer队列)&#xa;Ø 最后把干预召回结果塞入" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="-541" width="1080" height="150" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FC8D6A;endArrow=classic;endFill=1;" parent="1" source="CTMLsmFPayaTSugQ_vrA-2" target="CTMLsmFPayaTSugQ_vrA-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -268,58 +268,58 @@
         <mxCell id="1q_19juKDQYcNWKgW3-u-5" value="&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;获取&lt;span style=&quot;color: rgb(28, 29, 31); background-color: initial;&quot;&gt;电商&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;用户分层&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(28, 29, 31);&quot;&gt;ds_user_layer_tag : 1:低活跃 2:未转化 3:核心&lt;/span&gt;&lt;/div&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span style=&quot;color: rgb(28, 29, 31); background-color: transparent;&quot;&gt;- 浅层用户：30天点击&amp;lt;=5 &amp;amp; 90天购买 &amp;lt;= 1&lt;/span&gt;&lt;/div&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span style=&quot;color: rgb(28, 29, 31); background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;font color=&quot;#1c1d1f&quot;&gt;中层用户：30天点击&amp;gt;5 &amp;amp; 90天购买 = 0&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;text-align: left; padding-left: 0px;&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;font color=&quot;#1c1d1f&quot;&gt;-&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;font color=&quot;#1c1d1f&quot;&gt;核心用户：(30天点击&amp;gt;5 &amp;amp; 90天购买 = 1) 或 90天购买 &amp;gt;= 2&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..yqYl5LdsXMqG1i7H.h2zJN3ad7F0z8zZrL0x5SOSICrESLMV8dEU74EoNBORcdlZFNPWUUC4eia0j4AlamyoKcnQPkH-a4lMZglok0qHV8snmgu5q_vtArxVLRdtko599JwHxf3FpeFeTS3M7G6M1K6R9dh_B0HznSrV_KdrdgtxzzaYRmO5DbicUDLtVJrqaJiWrUDvuusRhMEex5vd5Xe8CMfA0J2DoPf_h3tOpSw.nvGQq45J5KLfsjFWWvhn9A&amp;quot;}&quot;&gt;&lt;/span&gt;&lt;div data-morpho-block-id=&quot;docyg-244403e9-b055-11ee-b7bd-ffd951228c3b&quot; data-slate-node=&quot;element&quot; style=&quot;padding-left:0px&quot; data-morpho-type=&quot;paragraph&quot; class=&quot;mp-paragraph-wrapper&quot;&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..yqYl5LdsXMqG1i7H.h2zJN3ad7F0z8zZrL0x5SOSICrESLMV8dEU74EoNBORcdlZFNPWUUC4eia0j4AlamyoKcnQPkH-a4lMZglok0qHV8snmgu5q_vtArxVLRdtko599JwHxf3FpeFeTS3M7G6M1K6R9dh_B0HznSrV_KdrdgtxzzaYRmO5DbicUDLtVJrqaJiWrUDvuusRhMEex5vd5Xe8CMfA0J2DoPf_h3tOpSw.nvGQq45J5KLfsjFWWvhn9A&amp;quot;}&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;mp-morpho-clipboard-doc-data&quot; data-morpho-doc-data=&quot;{&amp;quot;token&amp;quot;:&amp;quot;eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiYXBwSWQiOjEsInVpZCI6IjlDcDg0RE0wY3QiLCJkb2NJZCI6IjUzNTdmODQ1ZWIwZjRmIn0..pCHAVqKNl6A6FzGB.4LZeJNNsyfY-32JqOU4ROncP46VGgSdZKTIl4vjHuSVVTp13aCAMcsRqBmcMl11NA9PIhYyMEap1sNyuyVQPSBf3OS6b5mUCJUOoVcmleNhX4NoEdu-47aaP1DD8qN72Av_ruHi6Yksv0HpaVPMhnA-DxDfH-j-qqGou7mZcKCkmcx_sVsXQGSck9p826Wd89kI1APDDWsyadTtQYAsBp4rLoQ.nJl7Tq-rMvyrGDB84ryziw&amp;quot;}&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-827" y="-855.6500000000001" width="360" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-1" value="沉浸式场景 - query用户类型 Abtest " style="text;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-1" value="沉浸式场景 - query用户类型 Abtest " style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-328.66" y="-790.65" width="208.66" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-3" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-3" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-827" y="198" as="sourcePoint" />
             <mxPoint x="805.357" y="195.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-827" y="322.5" as="sourcePoint" />
             <mxPoint x="805.357" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-827" y="452.5" as="sourcePoint" />
             <mxPoint x="805.357" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-827" y="674.5" as="sourcePoint" />
             <mxPoint x="805.357" y="672" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-7" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-7" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-827" y="823" as="sourcePoint" />
             <mxPoint x="805.357" y="820.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;预处理&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;预处理&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-820" y="-581.76" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-9" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;召回&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-9" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;召回&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-815" y="160" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;粗排&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;粗排&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-815" y="280" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-11" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;精排&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-11" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;精排&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-815" y="419" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;队列合并&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;队列合并&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-827.5" y="642" width="75" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-13" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;后处理&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-13" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;后处理&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-827.5" y="779" width="75" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S-GF0X4kSmyvK1DAIHs_-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;返回&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="S-GF0X4kSmyvK1DAIHs_-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;返回&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-827" y="852" width="75" height="30" as="geometry" />
         </mxCell>
       </root>
