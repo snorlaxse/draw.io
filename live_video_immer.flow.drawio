@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-06T13:02:08.713Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="aAs6hN5y2Mz1pIARVLuI" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-06T13:03:07.635Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Q-yQs8te6Uu1kIERmlM5" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
     <mxGraphModel dx="1549" dy="2219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -212,7 +212,7 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-61" value="queue: live_video_immer; tag: shoubai_immer; &#xa;gcms_plugin_name:video_gcms,&#xa;读取正排信息 - 手百视频 (RecVideoInfo、NewsInfoData)&#xa;PS：过滤掉拿不到正排的无效资源&#xa;" style="text;whiteSpace=wrap;spacing=6;" parent="1" vertex="1">
           <mxGeometry x="-730" y="-410.03" width="360" height="80.03" as="geometry" />
         </mxCell>
-        <UserObject label="从merge_tag（shoubai_immer_msg）对应map中取出实时数据与队列中数据合并&#xa;● 获取gcms请求的结果，遍历single_response_ptr=cntx &gt;get_single_res(key),通过扩张protol的字段，将gcms中对应的直播间信息追加到single_response_ptr中，追加特征&#xa;● gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳舞，年龄等" link="获取新gcms请求的结果，遍历single_response._ptr=cntx&#xa;&gt;get_single_.res(key),通过扩张protol的字段，将gcms中对应的直播间信息追&#xa;加到single_response_ptr中，追加特征&#xa;●&#xa;gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳&#xa;舞，年龄等" id="CTMLsmFPayaTSugQ_vrA-62">
+        <UserObject label="从merge_tag（shoubai_immer_msg）对应map中取出实时数据与队列中数据合并&#xa;● 获取gcms请求的结果，遍历single_response_ptr,通过扩张protol的字段，将gcms中对应的直播间信息追加到single_response_ptr中，追加特征&#xa;● gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳舞，年龄等" link="获取新gcms请求的结果，遍历single_response._ptr=cntx&#xa;&gt;get_single_.res(key),通过扩张protol的字段，将gcms中对应的直播间信息追&#xa;加到single_response_ptr中，追加特征&#xa;●&#xa;gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳&#xa;舞，年龄等" id="CTMLsmFPayaTSugQ_vrA-62">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="-156" y="-311" width="495" height="60" as="geometry" />
           </mxCell>
