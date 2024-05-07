@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-07T03:33:45.133Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="R9rk8swE-w3JSMtSWRQy" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T07:48:15.856Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="hif3J3Skx6fO0vpr0d3o" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="1621" dy="2324" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1709" dy="2452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -129,8 +129,8 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-421" y="359" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-278" y="299" />
-              <mxPoint x="-471" y="299" />
+              <mxPoint x="-278" y="330" />
+              <mxPoint x="-467" y="330" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -140,37 +140,37 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;strokeColor=#17AAD5;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="CTMLsmFPayaTSugQ_vrA-15" target="CTMLsmFPayaTSugQ_vrA-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-203" y="299" />
-              <mxPoint x="85" y="299" />
+              <mxPoint x="-203" y="330" />
+              <mxPoint x="95" y="330" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-16" value="SBImmerFine_Rank&lt;div&gt;(Router)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-304.8216704288939" y="348.49048767504974" width="127.82844243792324" height="50.722683099933626" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-16" value="SBImmerFine_Rank&lt;div&gt;(Router 并行预测)&lt;br&gt;&lt;/div&gt;&lt;div&gt;tag:&amp;nbsp;shoubai_immer_fine&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="374.49" width="177" height="55.51" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FC8D6A;dashed=1;" parent="1" source="CTMLsmFPayaTSugQ_vrA-17" target="CTMLsmFPayaTSugQ_vrA-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-15" value="SBImmerSimpleAdjust&lt;div&gt;(SimpleAdjust)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-315.6546275395034" y="215.61628036879574" width="149.67945823927766" height="51.01859092731204" as="geometry" />
+          <mxGeometry x="-315.6546275395034" y="218.61628036879574" width="149.67945823927766" height="51.01859092731204" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-17" value="SBImmerMultiAdjust&lt;div&gt;(MultiAdjustHandler)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-315.6546275395034" y="469.0046949813037" width="149.67945823927766" height="51.01859092731204" as="geometry" />
+          <mxGeometry x="-315.6546275395034" y="496.0046949813037" width="149.67945823927766" height="51.01859092731204" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeColor=#FC8D6A;" parent="1" source="CTMLsmFPayaTSugQ_vrA-18" target="CTMLsmFPayaTSugQ_vrA-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-18" value="SBImmerMergeQueue&lt;div&gt;(MergeQueue)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-315.6546275395034" y="571.8789022875579" width="149.67945823927766" height="51.01859092731204" as="geometry" />
+          <mxGeometry x="-315.6546275395034" y="597.8789022875579" width="149.67945823927766" height="51.01859092731204" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FC8D6A;" parent="1" source="CTMLsmFPayaTSugQ_vrA-19" target="CTMLsmFPayaTSugQ_vrA-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-19" value="SBImmerIntervention&lt;div&gt;(InterventionHandler)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-315.6546275395034" y="703.7531095938122" width="149.67945823927766" height="51.01859092731204" as="geometry" />
+          <mxGeometry x="-315.6546275395034" y="729.7531095938122" width="149.67945823927766" height="51.01859092731204" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-20" value="SBImmerEndPb&lt;div&gt;(EndHandler)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-295.98616252821665" y="848.9973169000664" width="108.16252821670429" height="50.722683099933626" as="geometry" />
+          <mxGeometry x="-295.98616252821665" y="874.9973169000664" width="108.16252821670429" height="50.722683099933626" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeColor=#17AAD5;" parent="1" source="CTMLsmFPayaTSugQ_vrA-22" target="CTMLsmFPayaTSugQ_vrA-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -187,24 +187,24 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#17AAD5;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="CTMLsmFPayaTSugQ_vrA-24" target="CTMLsmFPayaTSugQ_vrA-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-471" y="439" />
-              <mxPoint x="-278" y="439" />
+              <mxPoint x="-471" y="465" />
+              <mxPoint x="-278" y="465" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-24" value="SBImmerDsCvr_Rank&lt;div&gt;(Router)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
-          <mxGeometry x="-542" y="347.49048767504974" width="142.0316027088036" height="50.722683099933626" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-24" value="SBImmerDsCvr_Rank&lt;div&gt;(Router&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;并行预测&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;tag:&amp;nbsp;shoubai_immer_ds_cvr&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
+          <mxGeometry x="-553" y="376.49" width="172" height="56.51" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeColor=#17AAD5;" parent="1" source="CTMLsmFPayaTSugQ_vrA-25" target="CTMLsmFPayaTSugQ_vrA-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="85" y="439" />
-              <mxPoint x="-203" y="439" />
+              <mxPoint x="85" y="465" />
+              <mxPoint x="-203" y="465" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-25" value="SBImmerRecallDup&lt;div&gt;(RecallDup)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
-          <mxGeometry x="13.91839729119647" y="351.49048767504974" width="142.0316027088036" height="50.722683099933626" as="geometry" />
+          <mxGeometry x="32" y="377.49" width="125.95" height="50.72" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-60" value="queue: live_video_immer; tag: shoubai_immer_msg; &#xa;gcms_plugin_name:gcms_Iive_msg&#xa;读取正排信息 - 直播间实时信号，操作灌入在gcms_data_map中&#xa;gcms_live_msg.conf - url_sign, is_gaming, labels. live_com，high_light_pv 等" style="text;whiteSpace=wrap;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="-41" y="-410.03" width="451" height="80.03" as="geometry" />
@@ -214,45 +214,45 @@
         </mxCell>
         <UserObject label="从merge_tag（shoubai_immer_msg）对应map中取出实时数据与 live_video_immer 队列中数据合并&#xa;● 获取gcms请求的结果，遍历single_response_ptr,通过扩张protol的字段，将gcms中对应的直播间信息追加到single_response_ptr中，追加特征&#xa;● gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳舞，年龄等" link="获取新gcms请求的结果，遍历single_response._ptr=cntx&#xa;&gt;get_single_.res(key),通过扩张protol的字段，将gcms中对应的直播间信息追&#xa;加到single_response_ptr中，追加特征&#xa;●&#xa;gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳&#xa;舞，年龄等" id="CTMLsmFPayaTSugQ_vrA-62">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-156" y="-311" width="586" height="60" as="geometry" />
+            <mxGeometry x="-166" y="-311" width="586" height="60" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-64" value="从redis获取直播间统计特征 &amp; 召回相似主播：&#xa;- sb_read_sonar_redis_by_rid：将队列中直播资源的rid存入live_video_immer 队列（key）中&#xa;- sb_deal_sonar_redis by_rid：解析从redis中读取的用户在每个直播间的统计特征（展现/点击/订单/分享等数据），存入到队列live_video_immer中的资源信息&#xa;- sb_immer_read_sonar_redis_by_query_nid：拼接沉浸式入口nid为key请求redis&#xa;- sb_immer_deal_sonar_redis_by_query_nid：获取沉浸式入口主播id的icf相似主播" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-169.8" y="-226.43" width="899.8" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-65" value="召回结果过滤算子（key: live_video_immer）" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-171" y="-116.43" width="451" height="40" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-65" value="召回结果过滤算子（key: live_video_immer）&#xa;[.@filter] name: filter_sb_immer_by_source 来源相关性过滤；filter_by_immer_anchor_level  沉浸式场景主播等级过滤，小流量过滤S3主播；... ...&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-171" y="-122.43" width="811" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-66" value="功能多样性队列拆分&#xa;1.live_video_immer队列：针对所有bs的召回结果，分为bs_resultz和bs_skip_result,对bs_result做diversity函数处&#xa;理后，连同bs_skip_result-一起插入返回结果。&#xa;处理：&#xa;1.插入需要干预的直播间&#xa;2.优先插入正在播的直播间，再插入回放直播间（当正在播的直播间小于10个时才会填充回放直播间）。&#xa;3.沉浸式候选直播间相关性约束。根据深知用户模型记录的用户图文/视频的类目/子类目tag点击率分（同ums计&#xa;算)，根据候选直播间的类目属性计算直播间和用户的相关性分，sim=0.2*cate_ctr+0.3*sub_cate_ctr+0.5*&#xa;tag_ctr,并插入sim&gt;0.1的候选集。&#xa;2.live_follow_queuel队列：关注队列&#xa;处理：从所有bs的召回结果中捞出关注主播的直播间。&#xa;3.live_immer_.ds_queue队列：电商结果队列&#xa;处理：从所有bs的召回结果中捞出电商直播间&#xa;4.live_immer_.ds_rank_queue队列：电商结果队列&#xa;处理：从所有bs的召回结果中捞出电商直播间" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-167.07000000000005" y="-65.43" width="560" height="257.43" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-66" value="功能多样性队列拆分&#xa;● live_video_immer队列：针对所有bs的召回结果，多样性处理后分为bs_result和bs_skip_result&#xa;[..@operator] 处理：&#xa;1.diversity_immer_intervention 插入需要干预的直播间&#xa;2.优先插入正在播的直播间，再插入回放直播间（当正在播的直播间小于10个时才会填充回放直播间）。&#xa;3.沉浸式候选直播间相关性约束。根据深知用户模型记录的用户图文/视频的类目/子类目tag点击率分（同ums计算)，根据候选直播间的类目属性计算直播间和用户的相关性分，sim=0.2*cate_ctr+0.3*sub_cate_ctr+0.5*tag_ctr,并插入sim&gt;0.1的候选集。&#xa;● live_follow_queue 队列：关注队列&#xa;[..@operator] 处理：diversity_for_follow_queue 从所有bs的召回结果中捞出关注主播的直播间。&#xa;● live_immer_ds_queue队列：沉浸式电商队列&#xa;[..@operator] 处理：diversity_for_immer_ds_queue 从所有bs的召回结果中捞出电商直播间&#xa;● live_immer_ds_rank_queue队列：沉浸式电商实验队列&#xa;[..@operator] 处理：diversity_for_immer_ds_rank_queue 从所有bs的召回结果中捞出电商直播间&#xa;● ...&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-167.07" y="-65.43" width="877.07" height="225.43" as="geometry" />
         </mxCell>
-        <UserObject label="队列结果粗排（no model）&#xa;live_video._immer队列进行下述算子：&#xa;- sb_immer_adjust_by_tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;- sb_immer_.adjust_by_Iive_type：沉浸式置顶直播，排序方式为 直播&gt;回放&gt;预告" link="队列结果预调整&#xa;live_video._immer队列进行下述算子：&#xa;sb_immer_.adjust_by_.tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;sb_immer_.adjust_by_Iive_type:沉浸式置顶直播，排序方式为直播&gt;回放&gt;预告" id="CTMLsmFPayaTSugQ_vrA-67">
+        <UserObject label="队列结果粗排（no model）， 粗排得分 cupai_final_score 写入res_score字段&#xa;● live_video_immer队列 &#xa;[..@quota_operator]：&#xa;- sb_immer_adjust_by_tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;- sb_immer_adjust_by_Iive_type：直播类型排序： 直播&gt;回放&gt;预告&#xa;● live_follow_queue队列 &#xa;[..@quota_operator] sb_immer_adjust_by_tab 类目相关性控制&#xa;● live_immer_ds_queue 队列&#xa;[..@quota_operator]&#xa;- sb_immer_adjust_by_tab 类目相关性控制&#xa;- sb_immer_adjust_by_live_type &#xa;- sb_immer_ds_digital_person_adjust&#xa;&#xa;&#xa;" link="队列结果预调整&#xa;live_video._immer队列进行下述算子：&#xa;sb_immer_.adjust_by_.tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;sb_immer_.adjust_by_Iive_type:沉浸式置顶直播，排序方式为直播&gt;回放&gt;预告" id="CTMLsmFPayaTSugQ_vrA-67">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-163" y="201.62" width="663" height="90" as="geometry" />
+            <mxGeometry x="-163" y="157.62" width="663" height="152.38" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-68" value="打包用户/物料特征进行精排多目标打分&#xa;打分队列：live_immer_ds_rank_queue" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-770" y="352.21000000000004" width="240" height="50" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-68" value="用户/物料特征的多目标精排打分&#xa;[.@quota_list]：live_immer_ds_queue&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-770" y="378.21000000000004" width="240" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-69" value="打包用户/物料特 行精排多目标打分&#xa;打分队列：&#xa;1.live video_immer&#xa;2.live_follow_queue" style="text;whiteSpace=wrap;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="-175" y="339" width="240" height="80" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-69" value="用户/物料特征的多目标精排打分&#xa;[.@quota_list]：&#xa;1.live_video_immer&#xa;2.live_follow_queue&#xa;" style="text;whiteSpace=wrap;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="-148" y="365" width="188" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-70" value="去重打标：包含标题/封面/视频/session重复&#xa;PS：在后面干预模块根据标记去重" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="164" y="354" width="260" height="50" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-70" value="操作live_video_immer队列，去重打标包含标题/封面/视频/session重复&#xa;PS：在后面干预模块根据标记去重" style="text;whiteSpace=wrap;spacing=6;" parent="1" vertex="1">
+          <mxGeometry x="164" y="372" width="260" height="50" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-71" value="分功能队列多目标融合及资源调权" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-156" y="480.02" width="210" height="40" as="geometry" />
+          <mxGeometry x="-156" y="506.02" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-72" value="多功能队列结果合并&#xa;1.各功能队列内部处理&#xa;。Iive_follow_queue:包含白名单关注主播前置，已观看关注主播后置（包含一跳/二跳/沉浸式）&#xa;。Iive_immer_ds_queue:词典配置排序方式和排序逻辑，比如默认时长排序/和入口资源相关的时长排序/和候选集合icf相关的直播间调权排序等等，最后选择top2资源（即电商资源）&#xa;2.多队列结果排序合并入主队列&#xa;。按照不同子队列级别合并，电商作为S队列优先插入，关注作为A级队列次级插入。(S:Iive_immer_ds_queue,A：Iive_video_immer）),先把子队列去重放入临时空间中，再把&#xa;主队列放入临时空间，最后临时空间作为主队列结果返回。" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-161" y="543" width="961" height="129" as="geometry" />
+          <mxGeometry x="-161" y="569" width="961" height="129" as="geometry" />
         </mxCell>
         <UserObject label="返回结果干预&#xa;● sb_immer_.intervention_by_.Iive_type:对每种类型直播分布做多样性，并按未展现直播，展现直播，回放顺序进行排序。预约资源多样性控制，并插入关注之前&#xa;● sb_immer_.intervention_by_.source:干预资源强插第二位开始&#xa;● sb_intervention_by._del_duplicate:过滤删除重复资源，之前dp中打标的重复资源&#xa;● top_user_follows：关注主播在前其他主播在后&#xa;● sb_immer_.intervention._by_tab:垂类tab下进入直播间后上下滑展现该垂类相关资源&#xa;● sb_immer_.position_change:沉浸式场景强插干预，先正常主播，后位置干预主播&#xa;● sb_immer_.position._change._by_Ilaw:规避法务风险，媒体类资源前后不展示秀场、游戏、电商带货（不区分入口场景）" link="返回结果干预&#xa;sb_immer_.intervention_by_.Iive_type:对每种类型直播分布做多样性，并按未展现直播，展现直播，回放顺序进行排序。预约资源多样性控制，并插入关注之前&#xa;sb_immer_.intervention_by_.source:干预资源强插第二位开始&#xa;●&#xa;sb_intervention_by._del_duplicate:过滤删除重复资源，之前dp中打标的重复资源&#xa;●&#xa;top_user_follows：关注主播在前其他主播在后&#xa;●&#xa;sb_immer_.intervention._by_tab:垂类tab下进入直播间后上下滑展现该垂类相关资源&#xa;●&#xa;sb_immer_.position_change:沉浸式场景强插干预，先正常主播，后位置干预主播&#xa;sb_immer_.position._change._by_Ilaw:规避法务风险，媒体类资源前后不展示秀场、游戏、电商带货（不区分入口场景）" id="CTMLsmFPayaTSugQ_vrA-73">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-160" y="679" width="880" height="130" as="geometry" />
+            <mxGeometry x="-160" y="705" width="880" height="130" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-74" value="结果组装&#xa;● shoubai immer附加处理逻辑：&#xa;● 电商主播分级落盘&#xa;● 沉浸式多目标预估分透传至grc&#xa;● 主播等级落盘&#xa;● D级主播流量盖帽落盘" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-165.98" y="830" width="200" height="96.37" as="geometry" />
+          <mxGeometry x="-165.98" y="856" width="200" height="96.37" as="geometry" />
         </mxCell>
         <mxCell id="1q_19juKDQYcNWKgW3-u-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#17AAD5;dashed=1;" parent="1" source="1q_19juKDQYcNWKgW3-u-1" target="CTMLsmFPayaTSugQ_vrA-7" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -273,32 +273,32 @@
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-3" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-827" y="198" as="sourcePoint" />
-            <mxPoint x="805.357" y="195.5" as="targetPoint" />
+            <mxPoint x="-827" y="152" as="sourcePoint" />
+            <mxPoint x="805.357" y="149.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-827" y="322.5" as="sourcePoint" />
-            <mxPoint x="805.357" y="320" as="targetPoint" />
+            <mxPoint x="-827" y="348.5" as="sourcePoint" />
+            <mxPoint x="805.357" y="346" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-827" y="452.5" as="sourcePoint" />
-            <mxPoint x="805.357" y="450" as="targetPoint" />
+            <mxPoint x="-827" y="478.5" as="sourcePoint" />
+            <mxPoint x="805.357" y="476" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-827" y="674.5" as="sourcePoint" />
-            <mxPoint x="805.357" y="672" as="targetPoint" />
+            <mxPoint x="-827" y="700.5" as="sourcePoint" />
+            <mxPoint x="805.357" y="698" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-7" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-827" y="823" as="sourcePoint" />
-            <mxPoint x="805.357" y="820.5" as="targetPoint" />
+            <mxPoint x="-827" y="849" as="sourcePoint" />
+            <mxPoint x="805.357" y="846.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;预处理&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -311,16 +311,16 @@
           <mxGeometry x="-815" y="280" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-11" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;精排&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-815" y="419" width="50" height="30" as="geometry" />
+          <mxGeometry x="-815" y="445" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;队列合并&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-827.5" y="642" width="75" height="30" as="geometry" />
+          <mxGeometry x="-827.5" y="668" width="75" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-13" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;后处理&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-827.5" y="779" width="75" height="30" as="geometry" />
+          <mxGeometry x="-827.5" y="805" width="75" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;返回&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-827" y="852" width="75" height="30" as="geometry" />
+          <mxGeometry x="-827" y="878" width="75" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
