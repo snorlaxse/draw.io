@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-07T09:25:39.681Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="UqtLvxcF__cx62muu8St" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T09:27:25.453Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="mdzPui3TLc4W0_jScv5e" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="2271" dy="3269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1517" dy="2173" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry x="60.5" y="-1021.28" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-55" value="从UMS服务中读取用户行为信息及用户画像。&#xa;无个性化实现（代码全注释），调用基类feed_q::marvel::UserModelHandler加载模型&#xa;[.@feature] 如下：&#xa;- profile_ml 用户基本属性；- feed_beha_model 互动数据；&#xa;- vertical_zhibo_readlist 各场景点击列表；- live_meditation_um 用户深知模型；&#xa;- video_dislike 视频dislike列表；- live_user_model 直播用户模型；&#xa;- immerse_live_readlist、feed_live_readlist、mv_live_readlist 直播浏览列表&#xa;... ..." style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="65.5" y="-967.83" width="462" height="70" as="geometry" />
+          <mxGeometry x="57.5" y="-970.83" width="462" height="70" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-57" value="用户兴趣计算模块；&#xa;加载计算算子：OperatorManager&lt;AttentionFunc&gt;::global()-&gt;get_operator(name);&#xa;[.@operator] ： cal_after_user_model 处理用户模型的数据存入上下文；merge_follow_map 合并用户的关注列表； &#xa;cal_session_history 整合session_list并去重 ... ...&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-162.5" y="-852.21" width="671" height="40" as="geometry" />
