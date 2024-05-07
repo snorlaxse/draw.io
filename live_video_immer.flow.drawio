@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-06T13:03:07.635Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Q-yQs8te6Uu1kIERmlM5" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T03:33:45.133Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="R9rk8swE-w3JSMtSWRQy" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="1549" dy="2219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1621" dy="2324" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,7 +25,7 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-58" value="读取用户trace正排记录；&#xa;根据用户模型将不同直播类型的信息（直播-title_sign，预告-star_id）放入上下文，并去重&#xa;PS：入口直播间信息 - cntx-&gt;_query_nid" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-161" y="-603" width="531" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-59" value="召回倒排索引&#xa;Ø 过滤掉直播资源 FOR 7天未点击/未展现/ user_activity 活跃度标记为4,5,6的用户；大字版每天最多展现2次直播；用户处于弱网环境下，不召回直播资源&#xa;Ø pre_process根据配置里的队列和attention，对召回资源的Attention map分类填充，没有重写in_process,应该在里面进行召回；&#xa;    沉浸式召回混合分发[.@sub_request] name: &quot;yy_immer_attentions&quot;,&quot;yy_immer_attentions_s3&quot;,&quot;yy_immer_attentions_non_s3&quot;,&#xa;&quot;bjh_immer_attentions&quot;,&quot;stars&quot;,&quot;bs_follows&#39;&quot;,&quot;hf_attentions&quot;, &quot;zcm_attentions&#39;&quot;,&quot;bs_one_quantitys&quot;, &quot;ecom_immer_realperson_attentions&quot;, &#xa;&quot;ecom_immer_digital_attentions&quot; -&gt; cntx-&gt;_selected_recall_xx_attentions&#xa;Ø write_back_result:将多路urs的返回结果去重后写入single_response_ptr(stg_config-&gt;_key - live_video_immer)" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-59" value="召回倒排索引&#xa;Ø 过滤掉直播资源 FOR 7天未点击/未展现/ user_activity 活跃度标记为4,5,6的用户；大字版每天最多展现2次直播；用户处于弱网环境下，不召回直播资源&#xa;Ø pre_process根据配置里的队列和attention，对召回资源的Attention map分类填充，没有重写in_process,应该在里面进行召回；&#xa;    沉浸式召回混合分发[.@sub_request] name: &quot;yy_immer_attentions&quot;,&quot;yy_immer_attentions_s3&quot;,&quot;yy_immer_attentions_non_s3&quot;,&#xa;&quot;bjh_immer_attentions&quot;,&quot;stars&quot;,&quot;bs_follows&#39;&quot;,&quot;hf_attentions&quot;, &quot;zcm_attentions&#39;&quot;,&quot;bs_one_quantitys&quot;, &quot;ecom_immer_realperson_attentions&quot;, &#xa;&quot;ecom_immer_digital_attentions&quot; -&gt; cntx-&gt;_selected_recall_xx_attentions&#xa;Ø write_back_result:将多路urs的返回结果去重后写入single_response_ptr(stg_config-&gt;_key - live_video_immer 队列)" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-160" y="-541" width="830" height="150" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FC8D6A;endArrow=classic;endFill=1;" parent="1" source="CTMLsmFPayaTSugQ_vrA-2" target="CTMLsmFPayaTSugQ_vrA-3" edge="1">
@@ -206,22 +206,22 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-25" value="SBImmerRecallDup&lt;div&gt;(RecallDup)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
           <mxGeometry x="13.91839729119647" y="351.49048767504974" width="142.0316027088036" height="50.722683099933626" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-60" value="queue: live_video_immer; tag: shoubai_immer_msg; &#xa;gcms_plugin_name:gcms_Iive_msg&#xa;读取正排信息 - 直播间实时信号&#xa;gcms_live_msg.conf - url_sign, is_gaming, labels. live_com，high_light_pv 等" style="text;whiteSpace=wrap;fontStyle=0" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-60" value="queue: live_video_immer; tag: shoubai_immer_msg; &#xa;gcms_plugin_name:gcms_Iive_msg&#xa;读取正排信息 - 直播间实时信号，操作灌入在gcms_data_map中&#xa;gcms_live_msg.conf - url_sign, is_gaming, labels. live_com，high_light_pv 等" style="text;whiteSpace=wrap;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="-41" y="-410.03" width="451" height="80.03" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-61" value="queue: live_video_immer; tag: shoubai_immer; &#xa;gcms_plugin_name:video_gcms,&#xa;读取正排信息 - 手百视频 (RecVideoInfo、NewsInfoData)&#xa;PS：过滤掉拿不到正排的无效资源&#xa;" style="text;whiteSpace=wrap;spacing=6;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-61" value="queue: live_video_immer; tag: shoubai_immer; &#xa;gcms_plugin_name:video_gcms,&#xa;读取正排信息 - 手百视频 (RecVideoInfo、NewsInfoData)&#xa;数据更新至 live_video_immer队列中&#xa;PS：过滤掉拿不到正排的无效资源&#xa;" style="text;whiteSpace=wrap;spacing=6;" parent="1" vertex="1">
           <mxGeometry x="-730" y="-410.03" width="360" height="80.03" as="geometry" />
         </mxCell>
-        <UserObject label="从merge_tag（shoubai_immer_msg）对应map中取出实时数据与队列中数据合并&#xa;● 获取gcms请求的结果，遍历single_response_ptr,通过扩张protol的字段，将gcms中对应的直播间信息追加到single_response_ptr中，追加特征&#xa;● gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳舞，年龄等" link="获取新gcms请求的结果，遍历single_response._ptr=cntx&#xa;&gt;get_single_.res(key),通过扩张protol的字段，将gcms中对应的直播间信息追&#xa;加到single_response_ptr中，追加特征&#xa;●&#xa;gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳&#xa;舞，年龄等" id="CTMLsmFPayaTSugQ_vrA-62">
+        <UserObject label="从merge_tag（shoubai_immer_msg）对应map中取出实时数据与 live_video_immer 队列中数据合并&#xa;● 获取gcms请求的结果，遍历single_response_ptr,通过扩张protol的字段，将gcms中对应的直播间信息追加到single_response_ptr中，追加特征&#xa;● gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳舞，年龄等" link="获取新gcms请求的结果，遍历single_response._ptr=cntx&#xa;&gt;get_single_.res(key),通过扩张protol的字段，将gcms中对应的直播间信息追&#xa;加到single_response_ptr中，追加特征&#xa;●&#xa;gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳&#xa;舞，年龄等" id="CTMLsmFPayaTSugQ_vrA-62">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-156" y="-311" width="495" height="60" as="geometry" />
+            <mxGeometry x="-156" y="-311" width="586" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-64" value="从redis获取一些直播间统计特征和召回相似主播：&#xa;- sb_read_sonar_redis_by_rid：将队列中直播资源的rid存入key中&#xa;- sb_deal_sonar_redis by_rid：保存直播间的展现/点击/订单/分享等数据&#xa;- sb_immer_read_sonar_redis_by_query_nid：拼接沉浸式入口nid为key请求redis&#xa;- sb_immer_deal_sonar_redis.by_query_nid：获取沉浸式入口直播资源支付icf拉链" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-171" y="-236.15" width="731" height="110" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-64" value="从redis获取直播间统计特征 &amp; 召回相似主播：&#xa;- sb_read_sonar_redis_by_rid：将队列中直播资源的rid存入live_video_immer 队列（key）中&#xa;- sb_deal_sonar_redis by_rid：解析从redis中读取的用户在每个直播间的统计特征（展现/点击/订单/分享等数据），存入到队列live_video_immer中的资源信息&#xa;- sb_immer_read_sonar_redis_by_query_nid：拼接沉浸式入口nid为key请求redis&#xa;- sb_immer_deal_sonar_redis_by_query_nid：获取沉浸式入口主播id的icf相似主播" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-169.8" y="-226.43" width="899.8" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-65" value="召回结果过滤算子" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-171" y="-116.43" width="130" height="40" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-65" value="召回结果过滤算子（key: live_video_immer）" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-171" y="-116.43" width="451" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-66" value="功能多样性队列拆分&#xa;1.live_video_immer队列：针对所有bs的召回结果，分为bs_resultz和bs_skip_result,对bs_result做diversity函数处&#xa;理后，连同bs_skip_result-一起插入返回结果。&#xa;处理：&#xa;1.插入需要干预的直播间&#xa;2.优先插入正在播的直播间，再插入回放直播间（当正在播的直播间小于10个时才会填充回放直播间）。&#xa;3.沉浸式候选直播间相关性约束。根据深知用户模型记录的用户图文/视频的类目/子类目tag点击率分（同ums计&#xa;算)，根据候选直播间的类目属性计算直播间和用户的相关性分，sim=0.2*cate_ctr+0.3*sub_cate_ctr+0.5*&#xa;tag_ctr,并插入sim&gt;0.1的候选集。&#xa;2.live_follow_queuel队列：关注队列&#xa;处理：从所有bs的召回结果中捞出关注主播的直播间。&#xa;3.live_immer_.ds_queue队列：电商结果队列&#xa;处理：从所有bs的召回结果中捞出电商直播间&#xa;4.live_immer_.ds_rank_queue队列：电商结果队列&#xa;处理：从所有bs的召回结果中捞出电商直播间" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-167.07000000000005" y="-65.43" width="560" height="257.43" as="geometry" />
