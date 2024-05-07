@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-07T09:43:02.224Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="U94I175DyN7xhqkX8ipf" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T09:50:51.516Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="FQoPVlRoyj7hwCgtxEY8" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="1489" dy="2132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1761" dy="2528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -100,7 +100,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-11" value="SBImmerMergeGcms&lt;div&gt;(MergeGcmsHandler)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
-          <mxGeometry x="-315.1546275395034" y="-472.880548856221" width="148.58690744920995" height="50.722683099933626" as="geometry" />
+          <mxGeometry x="-314.1546275395034" y="-457.880548856221" width="148.58690744920995" height="50.722683099933626" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FC8D6A;dashed=1;" parent="1" source="CTMLsmFPayaTSugQ_vrA-12" target="CTMLsmFPayaTSugQ_vrA-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -207,14 +207,14 @@
           <mxGeometry x="32.5" y="206.49" width="148" height="50.72" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-60" value="queue: live_video_immer; tag: shoubai_immer_msg; &#xa;gcms_plugin_name:gcms_Iive_msg&#xa;读取正排信息 - 直播间实时信号，操作灌入在gcms_data_map中&#xa;gcms_live_msg.conf - url_sign, is_gaming, labels. live_com，high_light_pv 等" style="text;whiteSpace=wrap;fontStyle=0" parent="1" vertex="1">
-          <mxGeometry x="-40.5" y="-581.03" width="451" height="80.03" as="geometry" />
+          <mxGeometry x="-40.5" y="-579.03" width="451" height="80.03" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-61" value="queue: live_video_immer; tag: shoubai_immer; &#xa;gcms_plugin_name:video_gcms,&#xa;读取正排信息 - 手百视频 (RecVideoInfo、NewsInfoData)&#xa;数据更新至 live_video_immer队列中&#xa;PS：过滤掉拿不到正排的无效资源&#xa;" style="text;whiteSpace=wrap;spacing=6;" parent="1" vertex="1">
           <mxGeometry x="-729.5" y="-581.03" width="360" height="80.03" as="geometry" />
         </mxCell>
-        <UserObject label="从merge_tag（shoubai_immer_msg）对应map中取出实时数据与 live_video_immer 队列中数据合并&#xa;● 获取gcms请求的结果，遍历single_response_ptr,通过扩张protol的字段，将gcms中对应的直播间信息追加到single_response_ptr中，追加特征&#xa;● gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳舞，年龄等" link="获取新gcms请求的结果，遍历single_response._ptr=cntx&#xa;&gt;get_single_.res(key),通过扩张protol的字段，将gcms中对应的直播间信息追&#xa;加到single_response_ptr中，追加特征&#xa;●&#xa;gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳&#xa;舞，年龄等" id="CTMLsmFPayaTSugQ_vrA-62">
+        <UserObject label="从merge_tag（shoubai_immer_msg）对应map中取出实时数据与 live_video_immer 队列中数据合并&#xa;具体地，遍历single_response_ptr,通过扩张protol的字段，追加gcms中对应的直播间信息（静态画像特征，比如挂机时长，是否real face,唱歌还是跳舞，年龄等）" link="获取新gcms请求的结果，遍历single_response._ptr=cntx&#xa;&gt;get_single_.res(key),通过扩张protol的字段，将gcms中对应的直播间信息追&#xa;加到single_response_ptr中，追加特征&#xa;●&#xa;gcms里都是一些静态画像特征，比如挂机时长，是否real face,唱歌还是跳&#xa;舞，年龄等" id="CTMLsmFPayaTSugQ_vrA-62">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-165.5" y="-482" width="586" height="60" as="geometry" />
+            <mxGeometry x="-156.5" y="-471" width="586" height="60" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-64" value="从redis获取直播间统计特征 &amp; 召回相似主播：&#xa;- sb_read_sonar_redis_by_rid：将队列中直播资源的rid存入live_video_immer 队列（key）中&#xa;- sb_deal_sonar_redis by_rid：解析从redis中读取的用户在每个直播间的统计特征（展现/点击/订单/分享等数据），存入到队列live_video_immer中的资源信息&#xa;- sb_immer_read_sonar_redis_by_query_nid：拼接沉浸式入口nid为key请求redis&#xa;- sb_immer_deal_sonar_redis_by_query_nid：获取沉浸式入口主播id的icf相似主播" style="text;whiteSpace=wrap;" parent="1" vertex="1">
@@ -224,11 +224,11 @@
           <mxGeometry x="-170.5" y="-293.43" width="811" height="81.43" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-66" value="功能多样性队列拆分&#xa;● live_video_immer队列：基于所有bs的召回结果，经[..@operator] 处理产出bs_result和bs_skip_result&#xa;● live_follow_queue 队列：关注队列&#xa;[..@operator] 处理：diversity_for_follow_queue 从所有bs的召回结果bs_result中过滤捞出关注主播的直播间&#xa;● live_immer_ds_queue队列：沉浸式电商队列&#xa;[..@operator] 处理：diversity_for_immer_ds_queue 从所有bs的召回结果bs_result中过滤捞出电商直播间&#xa;● live_immer_ds_rank_queue队列：沉浸式电商实验队列&#xa;[..@operator] 处理：diversity_for_immer_ds_rank_queue 从所有bs的召回结果bs_result中过滤捞出电商直播间&#xa;● yyflowgift_queue  流量礼物&#xa;[..@operator] 处理：yyflowgift_cb_recall&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-169.3" y="-200" width="877.07" height="170" as="geometry" />
+          <mxGeometry x="-169.3" y="-200" width="689.3" height="170" as="geometry" />
         </mxCell>
         <UserObject label="队列结果粗排（no model）， 粗排得分 cupai_final_score 写入res_score字段&#xa;● live_video_immer队列 &#xa;[..@quota_operator]：&#xa;- sb_immer_adjust_by_tab  垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;- sb_immer_adjust_by_live_type  直播类型排序 - 直播&gt;回放&gt;预告&#xa;● live_follow_queue队列 &#xa;[..@quota_operator] sb_immer_adjust_by_tab 类目相关性控制&#xa;● live_immer_ds_queue 队列&#xa;[..@quota_operator]&#xa;- sb_immer_adjust_by_tab 类目相关性控制&#xa;- sb_immer_adjust_by_live_type 直播类型排序 - 直播&gt;回放&gt;预告&#xa;- sb_immer_ds_digital_person_adjust&#xa;&#xa;&#xa;" link="队列结果预调整&#xa;live_video._immer队列进行下述算子：&#xa;sb_immer_.adjust_by_.tab：垂类tab下进入直播间后上下滑展现该垂类相关资源，控制相关性，类目match映射在代码中&#xa;sb_immer_.adjust_by_Iive_type:沉浸式置顶直播，排序方式为直播&gt;回放&gt;预告" id="CTMLsmFPayaTSugQ_vrA-67">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-162.5" y="-13.379999999999995" width="663" height="152.38" as="geometry" />
+            <mxGeometry x="-162.5" y="-28.379999999999995" width="663" height="152.38" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-68" value="用户/物料特征的多目标精排打分&#xa;[.@quota_list]：live_immer_ds_queue&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
@@ -273,8 +273,8 @@
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-3" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-826.5" y="-10" as="sourcePoint" />
-            <mxPoint x="805.857" y="-12.5" as="targetPoint" />
+            <mxPoint x="-826.5" y="-35" as="sourcePoint" />
+            <mxPoint x="805.857" y="-37.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S-GF0X4kSmyvK1DAIHs_-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.983;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
