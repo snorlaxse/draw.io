@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-07T09:50:51.516Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="FQoPVlRoyj7hwCgtxEY8" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T09:51:19.586Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="HRPUM65nXLPrJHiq9Ttf" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="1761" dy="2528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1549" dy="2219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,7 +25,7 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-58" value="读取用户trace正排记录；&#xa;根据用户模型将不同直播类型的信息（直播-title_sign，预告-star_id）放入上下文，并去重&#xa;PS：入口直播间信息 - cntx-&gt;_query_nid" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-160.5" y="-774" width="531" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-59" value="召回倒排索引&#xa;Ø 过滤掉直播资源 FOR 7天未点击/未展现/ user_activity 活跃度标记为4,5,6的用户；大字版每天最多展现2次直播；用户处于弱网环境下，不召回直播资源&#xa;Ø pre_process根据配置里的队列和attention，对召回资源的Attention map分类填充，没有重写in_process,应该在里面进行召回；&#xa;    沉浸式召回混合分发[.@sub_request] name: &quot;yy_immer_attentions&quot;,&quot;yy_immer_attentions_s3&quot;,&quot;yy_immer_attentions_non_s3&quot;,&#xa;&quot;bjh_immer_attentions&quot;,&quot;stars&quot;,&quot;bs_follows&#39;&quot;,&quot;hf_attentions&quot;, &quot;zcm_attentions&#39;&quot;,&quot;bs_one_quantitys&quot;, &quot;ecom_immer_realperson_attentions&quot;, &#xa;&quot;ecom_immer_digital_attentions&quot; -&gt; cntx-&gt;_selected_recall_xx_attentions&#xa;Ø write_back_result:将多路urs的返回结果去重后写入single_response_ptr(stg_config-&gt;_key - live_video_immer 队列)" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-59" value="召回倒排索引&#xa;Ø 过滤掉直播资源 FOR 7天未点击/未展现/ user_activity 活跃度标记为4,5,6的用户；大字版每天最多展现2次直播；用户处于弱网环境下，不召回直播资源&#xa;Ø pre_process根据配置里的队列和attention，对召回资源的Attention map分类填充，没有重写in_process,应该在里面进行召回；&#xa;    沉浸式召回混合分发[.@sub_request] &quot;yy_immer_attentions&quot;,&quot;yy_immer_attentions_s3&quot;,&quot;yy_immer_attentions_non_s3&quot;,&#xa;&quot;bjh_immer_attentions&quot;,&quot;stars&quot;,&quot;bs_follows&#39;&quot;,&quot;hf_attentions&quot;, &quot;zcm_attentions&#39;&quot;,&quot;bs_one_quantitys&quot;, &quot;ecom_immer_realperson_attentions&quot;, &#xa;&quot;ecom_immer_digital_attentions&quot; -&gt; cntx-&gt;_selected_recall_xx_attentions&#xa;Ø write_back_result:将多路urs的返回结果去重后写入single_response_ptr(stg_config-&gt;_key - live_video_immer 队列)" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-159.5" y="-712" width="830" height="150" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FC8D6A;endArrow=classic;endFill=1;" parent="1" source="CTMLsmFPayaTSugQ_vrA-2" target="CTMLsmFPayaTSugQ_vrA-3" edge="1">
