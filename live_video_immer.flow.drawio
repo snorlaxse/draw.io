@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-07T07:54:35.747Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="MgaCevVed_Wc0exyc84f" version="24.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T08:04:29.307Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="awAsoRxQr4QiEqKsbV12" version="24.3.0" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
-    <mxGraphModel dx="3010" dy="2385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1663" dy="2385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -240,8 +240,8 @@
         <mxCell id="CTMLsmFPayaTSugQ_vrA-70" value="操作live_video_immer队列，去重打标包含标题/封面/视频/session重复&#xa;PS：在后面干预模块根据标记去重" style="text;whiteSpace=wrap;spacing=6;" parent="1" vertex="1">
           <mxGeometry x="186" y="371" width="260" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-71" value="分功能队列多目标融合及资源调权&#xa;● live_video_immer 队列 &#xa;● live_follow_queue 队列 &#xa;● live_immer_ds_queue 队列 &#xa;● live_immer_ds_rank_queue 队列 &#xa;&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-156" y="506.02" width="210" height="113.98" as="geometry" />
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-71" value="分功能队列多目标融合及资源调权&#xa;● live_video_immer 队列 &#xa;[..@operator] sb_immer_multi_adjust_merge_q 计算5s和30s加权融合得分 ... ...&#xa;● live_follow_queue 队列 &#xa;[..@operator] sb_immer_multi_adjust_merge_q 计算5s和30s加权融合得分 ... ...&#xa;● live_immer_ds_queue 队列 &#xa;● live_immer_ds_rank_queue 队列 &#xa;&#xa;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-152" y="493.52" width="916" height="113.98" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-72" value="多功能队列结果合并&#xa;1.各功能队列内部处理&#xa;。Iive_follow_queue:包含白名单关注主播前置，已观看关注主播后置（包含一跳/二跳/沉浸式）&#xa;。Iive_immer_ds_queue:词典配置排序方式和排序逻辑，比如默认时长排序/和入口资源相关的时长排序/和候选集合icf相关的直播间调权排序等等，最后选择top2资源（即电商资源）&#xa;2.多队列结果排序合并入主队列&#xa;。按照不同子队列级别合并，电商作为S队列优先插入，关注作为A级队列次级插入。(S:Iive_immer_ds_queue,A：Iive_video_immer）),先把子队列去重放入临时空间中，再把&#xa;主队列放入临时空间，最后临时空间作为主队列结果返回。" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-161" y="642" width="961" height="129" as="geometry" />
