@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-08T03:01:28.886Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="isB2IucA6DLFI87NsYgM" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-08T03:01:51.829Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="CyEChbNxGCxrwhIvu5ob" version="24.3.1" type="github">
   <diagram name="第 1 页" id="BZP7j4EBE2frMY6dUary">
     <mxGraphModel dx="1812" dy="2269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -145,7 +145,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-16" value="SBImmerFine_Rank&lt;div&gt;(Router 并行预测)&lt;br&gt;&lt;/div&gt;&lt;div&gt;tag:&amp;nbsp;shoubai_immer_fine&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-16" value="SBImmerFine_Rank&lt;div&gt;(Router)&lt;br&gt;&lt;/div&gt;&lt;div&gt;tag:&amp;nbsp;shoubai_immer_fine&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FC8D6A;" parent="1" vertex="1">
           <mxGeometry x="-328.5" y="203.49" width="177" height="55.51" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FC8D6A;dashed=1;" parent="1" source="CTMLsmFPayaTSugQ_vrA-17" target="CTMLsmFPayaTSugQ_vrA-18" edge="1">
@@ -192,7 +192,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CTMLsmFPayaTSugQ_vrA-24" value="SBImmerDsCvr_Rank&lt;div&gt;(Router&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;并行预测&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;tag:&amp;nbsp;shoubai_immer_ds_cvr&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
+        <mxCell id="CTMLsmFPayaTSugQ_vrA-24" value="SBImmerDsCvr_Rank&lt;div&gt;(Router&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;tag:&amp;nbsp;shoubai_immer_ds_cvr&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#17AAD5;" parent="1" vertex="1">
           <mxGeometry x="-552.5" y="205.49" width="172" height="56.51" as="geometry" />
         </mxCell>
         <mxCell id="CTMLsmFPayaTSugQ_vrA-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeColor=#17AAD5;" parent="1" source="CTMLsmFPayaTSugQ_vrA-25" target="CTMLsmFPayaTSugQ_vrA-17" edge="1">
