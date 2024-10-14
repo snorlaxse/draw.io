@@ -1,9 +1,112 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="fntonmhhVKKyQZOpuxor">
-    <mxGraphModel>
+    <mxGraphModel dx="2074" dy="1155" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-1" target="Y1tjWxCr-YY4MG98k3lD-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="430" />
+              <mxPoint x="435" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-1" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;user_tower_ctr&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="460" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-2" target="Y1tjWxCr-YY4MG98k3lD-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-9" value="&lt;div style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space-collapse: preserve;&quot;&gt;get_slots_embedding()&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Y1tjWxCr-YY4MG98k3lD-7">
+          <mxGeometry x="0.4" y="-1" relative="1" as="geometry">
+            <mxPoint y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-2" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;user_fea_slot&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="627" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-3" target="Y1tjWxCr-YY4MG98k3lD-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-10" value="&lt;span style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space-collapse: preserve;&quot;&gt;get_slots_embedding()&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Y1tjWxCr-YY4MG98k3lD-8">
+          <mxGeometry x="-0.2083" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-3" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;item_fea_slot&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="628" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-4" target="Y1tjWxCr-YY4MG98k3lD-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-14" value="&lt;div style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space-collapse: preserve;&quot;&gt;deep_net()&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Y1tjWxCr-YY4MG98k3lD-13">
+          <mxGeometry x="-0.4" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-4" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;user_fea_emb&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="540" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-5" target="Y1tjWxCr-YY4MG98k3lD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-16" value="&lt;span style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space-collapse: preserve;&quot;&gt;deep_net()&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Y1tjWxCr-YY4MG98k3lD-15">
+          <mxGeometry x="-0.35" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-5" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;item_fea_emb&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="540" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-19" value="&lt;div style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space-collapse: preserve;&quot;&gt;dot()&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-11" target="Y1tjWxCr-YY4MG98k3lD-17">
+          <mxGeometry x="0.7436" y="-5" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="430" />
+              <mxPoint x="435" y="430" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-11" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;item_tower_ctr&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="460" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-22" value="&lt;div style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space-collapse: preserve;&quot;&gt;clip() &amp;amp; sigmoid()&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-17" target="Y1tjWxCr-YY4MG98k3lD-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-17" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;ctr_tower&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="345" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-21" target="Y1tjWxCr-YY4MG98k3lD-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="435" y="240" />
+              <mxPoint x="560" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-21" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;color: #000000;background-color: #ffffff;font-family: &#39;Fira Code&#39;, Menlo, Monaco, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 21px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #000000;&quot;&gt;sigmoid_ctr&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="260" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-23" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;cost_ctr&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Y1tjWxCr-YY4MG98k3lD-25" target="Y1tjWxCr-YY4MG98k3lD-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="685" y="240" />
+              <mxPoint x="560" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-27" value="&lt;div style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; white-space-collapse: preserve;&quot;&gt;log_loss()&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Y1tjWxCr-YY4MG98k3lD-26">
+          <mxGeometry x="0.827" relative="1" as="geometry">
+            <mxPoint y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1tjWxCr-YY4MG98k3lD-25" value="&lt;div style=&quot;color: #000000;background-color: #ffffff;font-family: &#39;Fira Code&#39;, Menlo, Monaco, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 21px;white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;cast_ctr_label&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="260" width="150" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
